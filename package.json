@@ -21,5 +21,8 @@
     "normalize.css": "^8.0.1",
     "rename": "^1.0.4",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "rateyo": "^3.0.0-alpha.2"
   }
 }

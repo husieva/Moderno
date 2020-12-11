@@ -12,7 +12,7 @@ cssmin = require('gulp-cssmin');
 
 gulp.task('sass', function(){
     return gulp.src('app/scss/**/*.scss')
-    .pipe(sass())
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(rename({suffix : '.min'}))
     .pipe(autoprefixer({
         overrideBrowserslist: ['last 8 versions']
@@ -23,7 +23,6 @@ gulp.task('sass', function(){
 
 gulp.task('style', function(){
     return gulp.src([
-        'node_modul/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
         'node_modules/magnific-popup/dist/magnific-popup.css'
     ])
